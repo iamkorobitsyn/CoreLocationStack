@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
 //MARK: - funcRoute
     
     @objc private func route() {
-        presentAddAlert(title: "Адрес назначения") { [self] text in
+        presentAddAlert(title: "Destination address") { [self] text in
             geocoder.geocodeAddressString(text) { [self] placemarks, error in
                 
                 if let error = error {

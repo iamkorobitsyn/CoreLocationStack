@@ -15,7 +15,7 @@ extension MainViewController {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         
         alert.addTextField() { text in
-            text.placeholder = "введите адрес"
+            text.placeholder = "enter address"
         }
         
         let firstAction = UIAlertAction(title: "Ok", style: .default) { action in
